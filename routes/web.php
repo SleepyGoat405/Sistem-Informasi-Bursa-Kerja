@@ -7,6 +7,7 @@ use App\Models\Perusahaan;
 use App\Models\Lamaran;
 use Illuminate\Http\Request;
 use App\Models\Lowongan;
+use App\Models\Developer;
 
 Route::get('/', function () {
     return Session::has('user') ? redirect()->route('dashboard') : redirect()->route('login');
@@ -106,6 +107,7 @@ Route::get('/about', function () {
     if (!Session::has('user')) {
         return redirect()->route('login')->with('error', 'Silakan login terlebih dahulu.');
     }
-    return view('about');
+    $developers = Developer::all(); // Mengambil semua data developer
+    return view('about', compact('developers')); // Mengirim data ke view
 })->name('about');
 
