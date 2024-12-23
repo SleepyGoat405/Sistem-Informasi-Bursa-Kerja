@@ -19,6 +19,7 @@ class CreateDeveloperTable extends Migration
             $table->string('jurusan'); // Jurusan mahasiswa
             $table->string('prodi'); // Program studi mahasiswa
             $table->string('gambar')->nullable();
+            $table->string('peran');
             $table->timestamps(); // Kolom created_at dan updated_at
         });
     }

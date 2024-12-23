@@ -51,6 +51,7 @@
                 <p><strong>NIM:</strong> {{ $developer->nim }}</p>
                 <p><strong>Jurusan:</strong> {{ $developer->jurusan }}</p>
                 <p><strong>Prodi:</strong> {{ $developer->prodi }}</p>
+                <p><strong>Peran</strong> {{ $developer->peran }}</p>
             </div>
         @empty
             <p class="text-center">Belum ada data developer.</p>

@@ -45,6 +45,10 @@ class DeveloperResource extends Resource
                     ->image()
                     ->directory('developers')
                     ->maxSize(10240),
+                TextInput::make('peran')
+                    ->label('Peran')
+                    ->required()
+                    ->maxLength(255),
             ]);
     }
 
@@ -57,6 +61,7 @@ class DeveloperResource extends Resource
                 TextColumn::make('jurusan')->label('Jurusan'),
                 TextColumn::make('prodi')->label('Program Studi'),
                 ImageColumn::make('gambar')->label('Foto')->circular(),
+                TextColumn::make('peran')->label('Peran'),
             ])
             ->filters([
                 //

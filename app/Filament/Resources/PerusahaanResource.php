@@ -34,7 +34,7 @@ class PerusahaanResource extends Resource
     public static function table(Table $table): Table
     {
         return $table
-            ->columns([ 
+            ->columns([
                 TextColumn::make('nama')->searchable(),
                 TextColumn::make('alamat'),
                 TextColumn::make('telepon'),

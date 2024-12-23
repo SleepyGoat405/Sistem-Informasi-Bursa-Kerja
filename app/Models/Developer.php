@@ -25,6 +25,7 @@ class Developer extends Model
         'nama',
         'jurusan',
         'prodi',
-        'gambar'
+        'gambar',
+        'peran',
     ];
 }

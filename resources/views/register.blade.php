@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
             height: 100vh;
             margin: 0;
             display: flex;
@@ -30,7 +30,7 @@
         .container h1 {
             margin-bottom: 20px;
             font-size: 24px;
-            color: #ffffff;
+            color: black;
         }
 
         .form-control {
@@ -51,8 +51,8 @@
             font-size: 14px;
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 6px;
-            background: rgba(255, 255, 255, 0.1);
-            color: #ffffff;
+            background: white (255, 255, 255, 0.1);
+            color: black;
         }
 
         .form-control input::placeholder {
@@ -63,7 +63,7 @@
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
-            background: linear-gradient(135deg, #ff6a00, #ee0979);
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
             border: none;
             border-radius: 6px;
             font-size: 16px;
@@ -78,7 +78,7 @@
         .login-link {
             margin-top: 15px;
             font-size: 14px;
-            color: #ffffff;
+            color: blue;
         }
 
         .login-link:hover {
